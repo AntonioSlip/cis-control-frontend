@@ -87,9 +87,12 @@ export default async function Page() {
           </div>
         </div>
         <div className="flex gap-3 items-center">
-          <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md flex items-center gap-2">
+          <Link
+            href="/questionnarie"
+            className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md flex items-center gap-2"
+          >
             <BarChart3 className="w-4 h-4" /> Nova Avaliação
-          </button>
+          </Link>
           <button className="border border-gray-300 px-4 py-2 rounded-md flex items-center gap-2 text-gray-700 hover:bg-gray-100">
             <FileText className="w-4 h-4" /> Gerar Relatório
           </button>
